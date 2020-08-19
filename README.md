@@ -1,57 +1,28 @@
-# Project Name
+# SparkCruise
 
-(short, 1-3 sentenced, description of the project)
-
-## Features
-
-This project framework provides the following features:
-
-* Feature 1
-* Feature 2
-* ...
+SparkCruise is an automatic computation reuse system developed for Spark. It can automatically detect overlapping computations in the past query workload and enable automatic materialization and reuse in future Spark SQL queries.
 
 ## Getting Started
 
 ### Prerequisites
 
-(ideally very short, if any)
-
-- OS
-- Library version
-- ...
+- Query workload
 
 ### Installation
 
-(ideally very short)
-
-- npm install [package name]
-- mvn install
-- ...
+HDInsight clusters are pre-installed with SparkCruise library and configuration options.
 
 ### Quickstart
-(Add steps to get up and running quickly)
 
-1. git clone [repository clone url]
-2. cd [respository name]
-3. ...
+Please refer to the detailed documentation [here](https://docs.microsoft.com/en-us/azure/hdinsight/spark/spark-cruise).
 
+We have also developed Workload Insights Notebook (WIN) to help users derive insights from their query workloads. To use WIN run the analyze command - `sudo /opt/peregrine/analyze/peregrine.sh analyze`
+and then import the notebook [(available here)](SparkCruise/WorkloadInsights_HDI_v0.4.ipynb) in Jupyter.
 
 ## Demo
 
-A demo app is included to show how to use the project.
-
-To run the demo, follow these steps:
-
-(Add steps to start up the demo)
-
-1.
-2.
-3.
+[SparkCruise and Workload Insights Notebook Demo](https://databricks.com/session_na20/sparkcruise-automatic-computation-reuse-in-apache-spark) at Spark+AI Summit 2020.
 
 ## Resources
 
-(Any additional resources or related projects)
-
-- Link to supporting information
-- Link to similar sample
-- ...
+- [SparkCruise: Handsfree Computation Reuse in Spark. VLDB 2019](https://people.cs.umass.edu/~aroy/sparkcruise-vldb19.pdf).
